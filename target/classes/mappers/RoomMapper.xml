@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.mycom.ojo.RoomMapper">
+
+
+	<select id="listAll" resultType="kr.mycom.ojo.domain.Room_infoVo">
+ <![CDATA[
+select rcode,name,addr,phone,rtype,rprofile,thumb,thdetail01,thdetail02,thdetail03,thdetail04,prc from room_info order by rcode;
+ ]]>
+	</select>
+ 
+</mapper>
